@@ -1,0 +1,56 @@
+**Travel Planner AI**
+
+## **Project Goals**
+The objective of the Travel Planner AI is to assist users in planning their trips efficiently. The system provides:
+- Hotel recommendations for user-specified destinations.
+- Personalized itineraries based on duration and interests.
+- Safe, structured, and interactive conversations for travel planning.
+- Integration with external APIs for up-to-date travel information.
+
+## **Data Sources**
+The project sources data from:
+1. **Hotel Listings API** – Retrieves top-rated hotels for a given destination.
+2. **OpenAI GPT-4-Turbo** – Processes user queries and extracts intent.
+3. **Moderation API** – Ensures safe content in user interactions.
+4. **Custom Itinerary Generator** – Structures personalized itineraries based on user input.
+
+## **System Design & Architecture**
+The system follows a structured, modular design:
+1. **User Input Processing**
+   - User submits a query.
+   - The system checks for unsafe content using the Moderation API.
+   - Extracts intent using OpenAI GPT-4-Turbo.
+   
+2. **Function Calling API Integration**
+   - AI determines whether to call the `findBestHotels` or `generate_itinerary` function.
+   - Relevant data is fetched from external APIs.
+
+3. **Response Generation & Formatting**
+   - Results are structured in a consistent and user-friendly format.
+   - Responses maintain clarity and standardization.
+
+## **Technical Implementation**
+- **AI Model:** Utilizes OpenAI's GPT-4-Turbo with function calling.
+- **Code Efficiency:** Optimized with modular functions for reusability and clarity.
+- **External API Interaction:** Uses requests library to fetch hotel data dynamically.
+- **Function Calling API:** Implements structured function calls to retrieve specific travel details.
+
+## **User Experience (UX)**
+- **Interactive Chat Interface:** AI-driven travel assistant ensures fluid conversations.
+- **Clear & Structured Responses:** Ensures easy readability.
+- **Personalization:** Itineraries are tailored based on user preferences.
+
+## **Challenges & Lessons Learned**
+### **Challenges:**
+1. **API Rate Limits:** Managing external API calls efficiently.
+2. **Extracting User Intent:** Ensuring accurate function selection based on queries.
+3. **Output Formatting:** Maintaining structured and consistent responses.
+
+### **Lessons Learned:**
+- Implementing system design principles improves workflow clarity.
+- Function calling significantly enhances conversational AI capabilities.
+- Moderation layers are essential for a safe user experience.
+
+## **Conclusion**
+The Travel Planner AI successfully integrates system design, function calling, and user-friendly interactions to provide a seamless travel planning experience. Future enhancements may include multi-city itinerary support and real-time travel updates.
+
