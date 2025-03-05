@@ -1,5 +1,4 @@
 openai
 requests
 json
-python-docx
 flask
