@@ -68,7 +68,7 @@ Travel Planner AI is an intelligent assistant that helps users plan their trips 
 - Integration with flight and activity booking services.
 
 ## License
--
+- N/A
 
 ## Contributing
 Contributions are welcome! Feel free to submit issues or pull requests to improve Travel Planner AI.
